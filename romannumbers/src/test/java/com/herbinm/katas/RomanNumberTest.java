@@ -1,4 +1,5 @@
-import com.herbinm.katas.RomanNumber;
+package com.herbinm.katas;
+
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -22,12 +23,12 @@ public class RomanNumberTest {
     }
 
     @Test
-    public void subtractsNumbersInAscendingOrder(){
+    public void subtractsNumbersInAscendingOrder() {
         assertThat(new RomanNumber("IV").toArabic()).isEqualTo(4);
     }
 
     @Test
-    public void acceptanceTest(){
+    public void acceptanceTest() {
         assertThat(new RomanNumber("MCMXLIV").toArabic()).isEqualTo(1944);
     }
 
