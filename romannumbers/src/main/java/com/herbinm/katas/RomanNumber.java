@@ -1,6 +1,8 @@
 package com.herbinm.katas;
 
-public class RomanNumber {
+import com.herbinm.katas.digit.RomanDigit;
+
+public class RomanNumber implements Number {
 
     private RomanDigit sequenceHead;
 
@@ -8,6 +10,7 @@ public class RomanNumber {
         buildRomanDigitSequence(numeral);
     }
 
+    @Override
     public int toArabic() {
         int arabic = 0;
         RomanDigit current = sequenceHead;
